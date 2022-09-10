@@ -2,6 +2,23 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+.vh100{
+  height: 100vh;
+}
+
+
+.fs20{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cp{
+  cursor: pointer;
+}
+.tac {
+  text-align: center;
 }
 .bd {
   border: 1px solid red;
@@ -16,7 +33,9 @@
 .df {
   display: flex;
 }
-
+.aifs {
+  align-items: flex-start;
+}
 .aic {
   align-items: center;
 }
@@ -34,6 +53,56 @@
 
 .ma {
   margin: auto;
+}
+
+.mat10 {
+  margin-top: 10px;
+}
+.mat20 {
+  margin-top: 20px;
+}
+.mat30 {
+  margin-top: 30px;
+}
+.mat40 {
+  margin-top: 40px;
+}
+.mat50 {
+  margin-top: 50px;
+}
+.mat60 {
+  margin-top: 60px;
+}
+.mat70 {
+  margin-top: 70px;
+}
+.mat80 {
+  margin-top: 80px;
+}
+
+.mab10 {
+  margin-bottom: 10px;
+}
+.mab20 {
+  margin-bottom: 20px;
+}
+.mab30 {
+  margin-bottom: 30px;
+}
+.mab40 {
+  margin-bottom: 40px;
+}
+.mab50 {
+  margin-bottom: 50px;
+}
+.mab60 {
+  margin-bottom: 60px;
+}
+.mab70 {
+  margin-bottom: 70px;
+}
+.mab80 {
+  margin-bottom: 80px;
 }
 
 .ma10 {
@@ -86,8 +155,6 @@
   height: 50px;
 }
 
-
-
-.br20{
-    border-radius: 20px;
+.br20 {
+  border-radius: 20px;
 }

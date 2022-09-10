@@ -10,16 +10,25 @@
         #navbar{
             width: 100%;
             height: 60px;
+            position: sticky;
+            top: 1px;
             padding: 0% 10%;
+            background-color: rgb(126, 126, 241);
         }
-        #header *{
+        #navbar>div:nth-child(2)>div{
+            font-size: 1.4em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #header{
             margin: auto;
         }
+
     </style>
 </head>
 <body>
     <div id="navbar" class="df jcsb aic">
-        <div class="df aic jcsa w20">Sumit Raghav</div>
+        <div class="df aic jcsa w20 fs20 cp">Sumit Raghav</div>
         <div class="df jcsa aic w60">
             <div>Home</div>
             <div>About</div>
@@ -29,11 +38,11 @@
             <div>Resume</div>
         </div>
     </div>
-    <div id="header" class=" ma w80">
-        <h1 class="db w70">Hi, I am Sumit Raghav</h1>
-        <h3 class="db w70">Java Backend Developer</h3>
-        <h4 class="db w70">An empathetic & hardworking individual with a problem-solving mindset who likes building applications and websites.</h4>
-        <div class="df jcsa w40 h50">
+    <div id="header" class="w80 vh100">
+        <h1 class="w60 tac ma mat20">Hi, I am Sumit Raghav</h1>
+        <h2 class="w60 tac ma mat20">Java Backend Developer</h2>
+        <h3 class="w60 tac ma mat20">An empathetic & hardworking individual with a problem-solving mindset who likes building applications and websites.</h3>
+        <div class="df jcsa w40 h50  ma mat20">
             <div ><a href="https://github.com/sumitraghavwork" target="_blank"><img class="h30" src="./data/github.png" alt=""></a></div>
             <div><a href="sumitraghavwork@gmail.com" target="_blank"><img class="h30" src="./data/mail.png" alt=""></a></div>
             <div><a href="http://www.linkedin.com/in/sumit-raghav-work" target="_blank"><img class="h30" src="./data/linkedin.png" alt=""></a></div>
@@ -42,22 +51,27 @@
         </div>
     </div>
 
-    <div id="aboutMe" class="ma w80">
-        <h1 class="">About Me</h1>
-        <div class="df">
-            <div class="w50">
+    <div id="aboutMe" class="ma w80 mat20 vh100">
+        <h1 class="tac mat20 mab20">About Me</h1>
+        <div class="df jcsa">
+            <div class="w40">
                 <img class="w100 br20" src="./data/pic.jpg" alt="">
             </div>
-            <div class="w40">
-                <h4>Hi , I am Sumit Raghav from Gurgaon, Haryana.
+            <div class="w50 ">
+                <h3>Hi , I am Sumit Raghav from Gurgaon, Haryana.
                      A dedicated Java Backend developer with a specialized skill set. Proficient in data structures and 
                      algorithms to build robust web applications. Self-motivated and adaptable to both back-end and front-end 
-                     whose mission in life is to build useful products for solving everyday problems.</h4>
-                <h4>Some of my interests apart form Coding :</h4>
-                <h4>Chess</h4>
-                <h4>Table Tennis</h4>
-                <h4>World Affairs</h4>
+                     whose mission in life is to build useful products for solving everyday problems.</h3>
+                     <br>
+                <h3>Some of my interests apart form Coding :</h3>
+                <h3>Chess</h3>
+                <h3>Table Tennis</h3>
+                <h3>World Affairs</h3>
             </div>
+        </div>
+
+        <div id="skills" class="vh100">
+
         </div>
        
     </div>
