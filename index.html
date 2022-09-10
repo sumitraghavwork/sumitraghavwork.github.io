@@ -12,6 +12,7 @@
             height: 60px;
             position: sticky;
             top: 1px;
+            z-index: 10;
             padding: 0% 10%;
             background-color: rgb(126, 126, 241);
         }
@@ -22,6 +23,8 @@
         }
         #header{
             margin: auto;
+            position: relative;
+            /* top: 50px; */
         }
 
     </style>
@@ -38,8 +41,9 @@
             <div>Resume</div>
         </div>
     </div>
-    <div id="header" class="w80 vh100">
-        <h1 class="w60 tac ma mat20">Hi, I am Sumit Raghav</h1>
+
+    <div id="header" class="w80 vh80 df fdc">
+        <h1 class="w60 tac ma mat80 fs60">Hi, I am Sumit Raghav</h1>
         <h2 class="w60 tac ma mat20">Java Backend Developer</h2>
         <h3 class="w60 tac ma mat20">An empathetic & hardworking individual with a problem-solving mindset who likes building applications and websites.</h3>
         <div class="df jcsa w40 h50  ma mat20">
@@ -47,17 +51,18 @@
             <div><a href="sumitraghavwork@gmail.com" target="_blank"><img class="h30" src="./data/mail.png" alt=""></a></div>
             <div><a href="http://www.linkedin.com/in/sumit-raghav-work" target="_blank"><img class="h30" src="./data/linkedin.png" alt=""></a></div>
             <div><a href="" target="_blank"><img class="h30" src="./data/resumepng.png" alt=""></a></div>
-            <div><a href="https://leetcode.com/sumitraghavwork/" target="_blank"><img class="h30" src="./data/leetcode1.png" alt=""></a></divlass=>
+            <div><a href="https://leetcode.com/sumitraghavwork/" target="_blank"><img class="h30" src="./data/leetcode1.png" alt=""></a></div>
         </div>
     </div>
 
-    <div id="aboutMe" class="ma w80 mat20 vh100">
-        <h1 class="tac mat20 mab20">About Me</h1>
+    <div id="aboutMe" class="ma w80 vh80">
+        <!-- <h1 class="tac mat20 mab20">About Me</h1> -->
         <div class="df jcsa">
             <div class="w40">
                 <img class="w100 br20" src="./data/pic.jpg" alt="">
             </div>
             <div class="w50 ">
+                <h1 class="mab20">About Me</h1>
                 <h3>Hi , I am Sumit Raghav from Gurgaon, Haryana.
                      A dedicated Java Backend developer with a specialized skill set. Proficient in data structures and 
                      algorithms to build robust web applications. Self-motivated and adaptable to both back-end and front-end 
@@ -70,7 +75,7 @@
             </div>
         </div>
 
-        <div id="skills" class="vh100">
+        <div id="skills" class="vh80">
 
         </div>
        

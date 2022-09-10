@@ -2,17 +2,29 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+
   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.vh80{
+  height: 80vh;
 }
 .vh100{
   height: 100vh;
 }
 
+.fdc{
+  flex-direction: column;
+}
+.fs60{
+  font-size: 60px;
+  font-weight: bold;
+}
 
 .fs20{
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .cp{
   cursor: pointer;
