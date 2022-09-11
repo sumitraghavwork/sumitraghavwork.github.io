@@ -2,31 +2,47 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: 'poppins',sans-serif;
+  font-family: 'poppins', sans-serif;
 
   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
+.btn{
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 5px 10px;
+  background-color: red;
+}
+.hov:hover{
+  transform: scale(1.05);
+}
 
-.vh80{
+a{
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.vh80 {
   height: 80vh;
 }
-.vh100{
+.vh100 {
   height: 100vh;
 }
 
-.fdc{
+.fdc {
   flex-direction: column;
 }
-.fs60{
+.fs60 {
   font-size: 60px;
   font-weight: bold;
 }
 
-.fs20{
+.fs20 {
   font-size: 20px;
   font-weight: bold;
 }
-.cp{
+.cp {
   cursor: pointer;
 }
 .tac {
