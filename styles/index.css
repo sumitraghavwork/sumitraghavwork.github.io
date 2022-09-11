@@ -1,0 +1,235 @@
+.heading {
+  font-size: 40px;
+  text-align: center;
+  width: 60vw;
+  margin: 20px auto;
+}
+
+#navbar {
+  width: 100vw;
+  height: 60px;
+  padding: 0% 10%;
+  background-color: rgb(126, 126, 241);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar > .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#navbar > .navItems {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60vw;
+}
+
+#navbar > div:nth-child(2) > div {
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*sliding animation
+*/
+/* #navbar > div:nth-child(2) > div > a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+#navbar > div:nth-child(2) > div > a:hover::after{
+    width: 100%;
+} */
+
+#header {
+  margin: auto;
+  width: 80vw;
+  /* height: 80vh; */
+  /* padding: 5%; */
+  display: flex;
+  flex-direction: column;
+}
+
+#header > h1 {
+  font-size: 50px;
+  text-align: center;
+  width: 60vw;
+  margin: 20px auto;
+}
+#header > h2 {
+  font-size: 30px;
+  text-align: center;
+  width: 60vw;
+  margin: 20px auto;
+}
+#header > h3 {
+  font-size: 22px;
+  text-align: center;
+  width: 60vw;
+  margin: 20px auto;
+}
+#header > .contact-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40vw;
+  margin: 20px auto;
+  height: 50px;
+}
+
+#aboutMe {
+  margin: auto;
+  width: 80%;
+}
+
+#aboutMe > .aboutMe-container {
+  padding: 5%;
+  /* border: 1px solid salmon; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: antiquewhite; */
+  border-radius: 30px;
+}
+
+#skills {
+  width: 80%;
+  margin: auto;
+}
+#skills > #skills-container {
+  width: 100%;
+  padding: 5% 10%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+}
+#skills > #skills-container > div {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+#skills > #skills-container > div:hover {
+  transform: scale(1.05);
+}
+#skills > #skills-container > div > img {
+  width: 100%;
+  /* border-top-left-radius: 20px;
+            border-top-right-radius: 20px; */
+}
+
+#projects {
+  width: 80%;
+  margin: auto;
+}
+
+#projects > #projects-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  gap: 40px;
+}
+#projects > #projects-container > div {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#projects > #projects-container > div > .project-demo > img {
+  width: 100%;
+  border-radius: 30px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* meidum screens */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: pink;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar > div:nth-child(2) {
+    display: none;
+  }
+
+  #header > h3 {
+    width: 80vw;
+  }
+
+  #aboutMe > .aboutMe-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 4fr 2fr;
+  }
+
+  #skills > #skills-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  #projects > #projects-container > div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+}
+
+/* small screens */
+@media all and (min-width: 320px) and (max-width: 767px) {
+  body {
+    background-color: brown;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar > div:nth-child(2) {
+    display: none;
+  }
+  #header > h3 {
+    display: none;
+  }
+
+  #aboutMe > .aboutMe-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+  }
+
+  #skills > #skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  #projects > #projects-container > div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 4fr;
+  }
+}

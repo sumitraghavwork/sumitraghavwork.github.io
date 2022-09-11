@@ -6,91 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumit Raghav</title>
     <link rel="stylesheet" href="./styles/bootstrap.css">
-    <style>
-
-        body>div{
-            width: 80%;
-            margin: 0% auto;
-        }
-        #navbar{
-            width: 100%;
-            height: 60px;
-            padding: 0% 10%;
-            background-color: rgb(126, 126, 241);
-        }
-        #navbar>div:nth-child(2)>div{
-            font-size: 1.4em;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        #header{
-            margin: auto;
-        }
-        #skills{
-            width: 80%;
-        }
-        #skills>#skills-container{
-            width: 100%;
-            padding: 5% 10%;
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-template-rows: auto;
-            gap: 30px;
-        }
-        #skills>#skills-container>div{
-            padding: 5%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-radius: 20px;
-            border: 1px solid #ccc;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-            cursor: pointer;
-        }
-        #skills>#skills-container>div:hover{
-            transform: scale(1.05);
-
-        }
-        #skills>#skills-container>div>img{
-            width: 100%;
-            /* border-top-left-radius: 20px;
-            border-top-right-radius: 20px; */
-        }
-
-        #projects>#projects-container{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows: auto;
-            gap: 40px;
-        }
-        #projects>#projects-container>div{
-            padding: 5%;
-            /* border: 1px solid blue; */
-            display: grid;
-            grid-template-columns: 3fr 1fr;
-            grid-template-rows: auto;
-            gap: 20px;
-            border-radius: 30px;
-            
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        }
-        #projects>#projects-container>div> .project-demo>img{
-            width: 100%;
-            border-radius: 30px;
-            
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    <div id="navbar" class="df jcsb aic">
-        <div class="df aic jcsa w20 fs20 cp">Sumit Raghav</div>
-        <div class="df jcsa aic w60">
+    <div id="navbar">
+        <div class="logo">Sumit Raghav</div>
+        <div class="navItems">
             <div><a href="#header">Home</a></div>
             <div><a href="#aboutMe">About</a></div>
             <div><a href="#skills">Skills</a></div>
@@ -100,14 +21,14 @@
         </div>
     </div>
 
-    <div id="header" class="w80 vh80 df fdc">
-        <h1 class="w60 tac ma mat80 fs60">Hi, I am Sumit Raghav</h1>
-        <h2 class="w60 tac ma mat20">Java Backend Developer</h2>
-        <h3 class="w60 tac ma mat20">Good understanding of programming concepts in both Frontend &
+    <div id="header">
+        <h1 class="heading">Hi, I am Sumit Raghav</h1>
+        <h2>Java Backend Developer</h2>
+        <h3>Good understanding of programming concepts in both Frontend &
             Backend Technologies and training in Java Backend and Frontend
             Development. Enthusiastic and eager to contribute to the team through
             hard work. I am motivated to learn and grow in Tech Industry.</h3>
-        <div class="df jcsa w40 h50  ma mat20">
+        <div class="contact-links">
             <div ><a href="https://github.com/sumitraghavwork" target="_blank"><img class="h40 hov" src="./data/github.png" alt=""></a></div>
             <div><a href="sumitraghavwork@gmail.com" target="_blank"><img class="h40 hov" src="./data/mail.png" alt=""></a></div>
             <div><a href="http://www.linkedin.com/in/sumit-raghav-work" target="_blank"><img class="h40 hov" src="./data/linkedin.png" alt=""></a></div>
@@ -116,13 +37,13 @@
         </div>
     </div>
 
-    <div id="aboutMe" class="ma w80 vh80">
-        <h1 class="tac mat20 mab20">About Me</h1>
-        <div class="df jcsa">
-            <div class="w40">
+    <div id="aboutMe">
+        <h1 class="heading">About Me</h1>
+        <div class="aboutMe-container">
+            <div>
                 <img class="w100 br20" src="./data/pic.jpg" alt="">
             </div>
-            <div class="w50 ">
+            <div>
                 <!-- <h1 class="mab20">About Me</h1> -->
                 <h3>Hi , I am Sumit Raghav from Gurgaon, Haryana.
                      A dedicated Java Backend developer with a specialized skill set. Proficient in data structures and 
@@ -138,8 +59,8 @@
     </div>
 
 
-    <div id="skills" class="vh80">
-        <h1 class="tac mat20 mab20">Skills</h1>
+    <div id="skills">
+        <h1 class="heading">Skills</h1>
         <div id="skills-container">
             <div>
                 <img src="./data/java.png" alt="java">
@@ -170,8 +91,8 @@
     </div>
 
 
-    <div id="projects" class="v80">
-        <h1 class="tac mat20 mab20">Projects</h1>
+    <div id="projects">
+        <h1 class="heading">Projects</h1>
         <div id="projects-container">
             <div>
                 <div class="project-demo">
@@ -236,7 +157,7 @@
 
 
     <div id="contact" class="vh80">
-        <h1 class="tac mat20 mab20">Contact Me</h1>
+        <h1 class="heading">Contact Me</h1>
     </div>
 </body>
 </html>

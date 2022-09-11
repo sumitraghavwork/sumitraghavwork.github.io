@@ -10,7 +10,7 @@
   border: 1px solid #ccc;
   border-radius: 15px;
   padding: 5px 10px;
-  background-color: red;
+  background-color: #ccc;
 }
 .hov:hover{
   transform: scale(1.05);
