@@ -170,7 +170,7 @@
 /* meidum screens */
 @media all and (min-width: 768px) and (max-width: 1024px) {
   body {
-    background-color: pink;
+    /* background-color: pink; */
   }
   #navbar {
     display: flex;
@@ -197,14 +197,14 @@
 
   #projects > #projects-container > div {
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 3fr 2fr;
   }
 }
 
 /* small screens */
 @media all and (min-width: 320px) and (max-width: 767px) {
   body {
-    background-color: brown;
+    /* background-color: brown; */
   }
   #navbar {
     display: flex;
@@ -230,6 +230,9 @@
 
   #projects > #projects-container > div {
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr 4fr;
+    grid-template-rows: 3fr 2fr;
+  }
+  #projects > #projects-container > div > div > p {
+    display: none;
   }
 }
