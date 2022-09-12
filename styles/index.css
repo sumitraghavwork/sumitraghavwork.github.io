@@ -168,7 +168,7 @@
 }
 
 /* meidum screens */
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
     /* background-color: pink; */
   }
@@ -186,8 +186,8 @@
   }
 
   #aboutMe > .aboutMe-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 4fr 2fr;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 4fr 2fr; */
   }
 
   #skills > #skills-container {
@@ -197,12 +197,12 @@
 
   #projects > #projects-container > div {
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 2fr;
+    /* grid-template-rows: 3fr 2fr; */
   }
 }
 
 /* small screens */
-@media all and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   body {
     /* background-color: brown; */
   }
@@ -220,7 +220,7 @@
 
   #aboutMe > .aboutMe-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 2fr;
+    /* grid-template-rows: 3fr 2fr; */
   }
 
   #skills > #skills-container {
@@ -230,7 +230,7 @@
 
   #projects > #projects-container > div {
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 2fr;
+    /* grid-template-rows: 1fr 1fr; */
   }
   #projects > #projects-container > div > div > p {
     display: none;
