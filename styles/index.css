@@ -177,7 +177,7 @@
   margin: auto;
 }
 #contact > div:nth-child(2) {
-  padding: 5%;
+  padding: 3%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
@@ -217,15 +217,15 @@
 
 #google-sheet > form > input {
   width: 100%;
-  padding: 5px 10px;
-  margin: 20px 0px;
+  padding: 10px 15px;
+  margin: 10px 0px;
   border-radius: 10px;
   border: 1px solid #ccc;
 }
 #google-sheet > form > textarea {
   width: 100%;
   padding: 5px 10px;
-  margin: 40px 0px;
+  margin: 20px 0px;
   border-radius: 10px;
   border: 1px solid #ccc;
 }
