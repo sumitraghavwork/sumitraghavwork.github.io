@@ -137,6 +137,11 @@
             border-top-right-radius: 20px; */
 }
 
+#githubBoard {
+  width: 80%;
+  margin: auto;
+}
+
 #projects {
   width: 80%;
   margin: auto;
