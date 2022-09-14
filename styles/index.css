@@ -79,6 +79,8 @@
 #header > .contact-links {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  gap: 10px;
   width: 40vw;
   margin: 20px auto;
   height: 50px;
@@ -94,13 +96,17 @@
   /* border: 1px solid salmon; */
   width: 100%;
   display: grid;
-  grid-template-columns: 4fr 4fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 20px;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   /* background-color: antiquewhite; */
   border-radius: 30px;
+}
+
+#aboutMe > .aboutMe-container > div > h3 {
+  line-height: 30px;
 }
 
 #skills {
@@ -198,7 +204,7 @@
 } */
 
 #contact-icons > div > a {
-  padding: 0% 15%;
+  padding: 0% 10%;
   /* border: 1px solid red; */
   display: flex;
   align-items: center;
@@ -212,7 +218,7 @@
 }
 #google-sheet > form {
   width: 100%;
-  padding: 0% 10%;
+  padding: 0% 15%;
 }
 
 #google-sheet > form > input {
@@ -228,6 +234,19 @@
   margin: 20px 0px;
   border-radius: 10px;
   border: 1px solid #ccc;
+}
+
+#copyright {
+  width: 100%;
+  margin: auto;
+  height: 50px;
+  background-color: rgb(126, 126, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#copyright span {
+  color: rgb(101, 44, 44);
 }
 
 /* meidum screens */
@@ -251,6 +270,10 @@
   #aboutMe > .aboutMe-container {
     grid-template-columns: 1fr;
     /* grid-template-rows: 4fr 2fr; */
+  }
+
+  #aboutMe > .aboutMe-container > div > h3 {
+    line-height: 20px;
   }
 
   #skills > #skills-container {
@@ -288,6 +311,10 @@
   #aboutMe > .aboutMe-container {
     grid-template-columns: 1fr;
     /* grid-template-rows: 3fr 2fr; */
+  }
+
+  #aboutMe > .aboutMe-container > div > h3 {
+    line-height: 20px;
   }
 
   #skills > #skills-container {
