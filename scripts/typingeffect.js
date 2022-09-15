@@ -1,17 +1,15 @@
-window.onload
+const text = document.getElementById('java-typing');
+const prog = 'JAVA BACKEND DEVELOPER';
+let idx = 1;
 
+setInterval(write, 205);
 
-var i = 0;
-var txt = 'JAVA BACKEND DEVELOPER'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+function write(){
+    text.innerText = prog.slice(0,idx);
+    idx ++;
+    if (idx > prog.length) {
+        
+        idx=1;
+    }
 
-setInterval(typeWriter,2000);
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("java-typing").innerHTML += txt.charAt(i);
-    i++;
-    if(i==txt.length) i==0;
-    setTimeout(typeWriter, speed);
-  }
 }
