@@ -350,6 +350,10 @@
     gap: 10px;
   }
 
+  #myStatistics > div:nth-child(3) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   #projects > #projects-container > div {
     grid-template-columns: 1fr;
     /* grid-template-rows: 3fr 2fr; */
@@ -397,6 +401,10 @@
   #skills > #skills-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  #myStatistics > div:nth-child(3) {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   #projects > #projects-container > div {
