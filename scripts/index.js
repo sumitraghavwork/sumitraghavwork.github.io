@@ -141,6 +141,7 @@ var loadprojects = (arr) => {
     live.setAttribute('class', 'btn')
     const livelink = document.createElement('a')
     livelink.href = ele.live
+    livelink.target = '_blank'
     livelink.innerText = 'See This Live'
     live.append(livelink)
 
@@ -148,6 +149,7 @@ var loadprojects = (arr) => {
     github.setAttribute('class', 'btn')
     const githublink = document.createElement('a')
     githublink.href = ele.github
+    githublink.target = '_blank'
     githublink.innerText = 'View Code'
     github.append(githublink)
 
@@ -179,7 +181,7 @@ let projects = [
     name: 'Myntra Website Clone',
     desc:
       'Ecommerce website for online shopping with Full functionality flow i.e SignUp, SighIn, Cart, Payment Checkout',
-    live: 'https://frolicking-torrone-694d2a.netlify.app/',
+    live: 'https://sumitraghavwork.github.io/mytro-di-myntra/',
     github: 'https://github.com/sumitraghavwork/mytro-di-myntra',
     techstack: ['./data/js.png', './data/html.png', './data/css.png'],
     group: 'true',
@@ -191,8 +193,8 @@ let projects = [
     name: 'Student Management System',
     desc:
       'Student Management System Helps provide a single platform where Instructors and Students can Sign Up and Manage the Students lectures and assignments.',
-    live: 'https://frolicking-torrone-694d2a.netlify.app/',
-    github: 'https://github.com/sumitraghavwork/mytro-di-myntra',
+    live: 'https://sumitraghavwork.github.io/StudentManagementSystem/',
+    github: 'https://github.com/sumitraghavwork/StudentManagementSystem',
     techstack: ['./data/js.png', './data/html.png', './data/css.png'],
     group: 'false',
     solo: 'true',
@@ -203,7 +205,7 @@ let projects = [
     name: 'Weather App',
     desc:
       'Provides Weather Forecast of the city.Weather API is used to get the forecast for the next 7 days. Google maps API is configured to get geolocation data of the user and to provide the current location and weather information.',
-    live: 'https://resilient-gumdrop-d3b7ad.netlify.app/',
+    live: 'https://sumitraghavwork.github.io/weather101/',
     github: 'https://github.com/sumitraghavwork/weather101',
     techstack: ['./data/js.png', './data/html.png', './data/css.png'],
     group: 'false',
