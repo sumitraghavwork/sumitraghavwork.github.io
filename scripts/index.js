@@ -117,8 +117,8 @@ var loadprojects = (arr) => {
     image.src = ele.image
     project_demo.append(image)
 
-    const tac = document.createElement('div')
-    tac.setAttribute('class', 'tac')
+    const project_info = document.createElement('div')
+    project_info.setAttribute('class', 'tac')
 
     const name = document.createElement('h3')
     name.innerText = ele.name
@@ -126,23 +126,22 @@ var loadprojects = (arr) => {
     const desc = document.createElement('p')
     desc.innerText = ele.desc
 
-    const techstack = document.createElement('div')
+    const techstack = document.createElement('p')    
+    let bag = ''
     ele.techstack.forEach((e) => {
-      const stack = document.createElement('img')
-      stack.setAttribute('class', 'h40 hov')
-      stack.src = e
-      techstack.append(stack)
+      bag += ' | ' + e
     })
+    techstack.innerText = 'Tech Stack ' + bag
 
     const buttons = document.createElement('div')
-    buttons.setAttribute('class', 'df w80 jcsa ma mat20')
+    buttons.setAttribute('class', 'btn_div')
 
     const live = document.createElement('div')
     live.setAttribute('class', 'btn')
     const livelink = document.createElement('a')
     livelink.href = ele.live
     livelink.target = '_blank'
-    livelink.innerText = 'See This Live'
+    livelink.innerText = 'See Live'
     live.append(livelink)
 
     const github = document.createElement('div')
@@ -155,9 +154,9 @@ var loadprojects = (arr) => {
 
     buttons.append(live, github)
 
-    tac.append(name, desc, techstack, buttons)
+    project_info.append(name, desc,techstack, buttons)
 
-    project.append(project_demo, tac)
+    project.append(project_demo, project_info)
 
     projects_container.append(project)
   })
@@ -171,7 +170,7 @@ let projects = [
       "Recruitee is built for bringing teams together. That's why we design tools that allow you to structure and customize your recruitment into a collaborative process. More than 5,000 companies use our collaborative hiring software to share the work, speed up daily processes, and grow their teams together.",
     live: 'https://inquisitive-kashata-a201b3.netlify.app/',
     github: 'https://github.com/sumitraghavwork/bashful-form-6526',
-    techstack: ['./data/js.png', './data/html.png', './data/css.png'],
+    techstack: ['HTML', 'JavaScript', 'CSS'],
     group: 'true',
     solo: 'false',
     type: 'all',
@@ -183,7 +182,7 @@ let projects = [
       'Ecommerce website for online shopping with Full functionality flow i.e SignUp, SighIn, Cart, Payment Checkout',
     live: 'https://sumitraghavwork.github.io/mytro-di-myntra/',
     github: 'https://github.com/sumitraghavwork/mytro-di-myntra',
-    techstack: ['./data/js.png', './data/html.png', './data/css.png'],
+    techstack: ['HTML', 'JavaScript', 'CSS'],
     group: 'true',
     solo: 'false',
     type: 'all',
@@ -195,7 +194,7 @@ let projects = [
       'Student Management System Helps provide a single platform where Instructors and Students can Sign Up and Manage the Students lectures and assignments.',
     live: 'https://sumitraghavwork.github.io/StudentManagementSystem/',
     github: 'https://github.com/sumitraghavwork/StudentManagementSystem',
-    techstack: ['./data/js.png', './data/html.png', './data/css.png'],
+    techstack: ['HTML', 'JavaScript', 'CSS'],
     group: 'false',
     solo: 'true',
     type: 'all',
@@ -207,7 +206,7 @@ let projects = [
       'Provides Weather Forecast of the city.Weather API is used to get the forecast for the next 7 days. Google maps API is configured to get geolocation data of the user and to provide the current location and weather information.',
     live: 'https://sumitraghavwork.github.io/weather101/',
     github: 'https://github.com/sumitraghavwork/weather101',
-    techstack: ['./data/js.png', './data/html.png', './data/css.png'],
+    techstack: ['HTML', 'JavaScript', 'CSS'],
     group: 'false',
     solo: 'true',
     type: 'all',
@@ -219,7 +218,7 @@ let projects = [
       ' Star wars is a fictional Series and this app gives description of various characters of series using API.',
     live: 'https://sumitraghavwork.github.io/starwars/',
     github: 'https://github.com/sumitraghavwork/starwars',
-    techstack: ['./data/js.png', './data/html.png', './data/css.png'],
+    techstack: ['HTML', 'JavaScript', 'CSS'],
     group: 'false',
     solo: 'true',
     type: 'all',
