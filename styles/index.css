@@ -5,7 +5,7 @@ html {
 .heading {
   font-size: 35px;
   text-align: center;
-  width: 60vw;
+  /* width: 60vw; */
   margin: 20px auto;
 }
 .about_btn {
@@ -342,7 +342,7 @@ html {
 
   .heading {
     font-size: 30px;
-    width: 90vw;
+    /* width: 90vw; */
   }
 
   #header > h3 {
@@ -385,7 +385,7 @@ html {
   }
   .heading {
     font-size: 25px;
-    width: 80vw;
+    /* width: 80vw; */
   }
   #burger_menu {
     display: block;
