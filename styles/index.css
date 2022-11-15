@@ -411,7 +411,7 @@ html {
     grid-template-columns: 1fr;
   }
   #projects > #projects-container > div > div > p {
-    display: none;
+    /* display: none; */
   }
 
   #contact > div:nth-child(2) {
