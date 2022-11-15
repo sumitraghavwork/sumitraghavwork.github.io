@@ -126,7 +126,8 @@ var loadprojects = (arr) => {
     const desc = document.createElement('p')
     desc.innerText = ele.desc
 
-    const techstack = document.createElement('p')    
+    const techstack = document.createElement('p') 
+       
     let bag = ''
     ele.techstack.forEach((e) => {
       bag += ' | ' + e
@@ -163,6 +164,18 @@ var loadprojects = (arr) => {
 }
 
 let projects = [
+  {
+    image: './data/BookMyBus.png',
+    name: 'BookMyBus SpringBoot Application',
+    desc:
+      "An end-to-end bus reservation system. It handles user authentication, create bus, route, book reservations, provide feedback.",
+    live: 'http://busdb-env.eba-3j79v3zc.ap-south-1.elasticbeanstalk.com/swagger-ui/',
+    github: 'https://github.com/sumitraghavwork/habitual-flag-8718',
+    techstack: ['SpringBoot', 'AWS', 'Hibernate'],
+    group: 'true',
+    solo: 'false',
+    type: 'all',
+  },
   {
     image: './data/recruitee.png',
     name: 'Recruitee.com Website Clone',
