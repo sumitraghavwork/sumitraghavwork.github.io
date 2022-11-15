@@ -126,7 +126,7 @@ var loadprojects = (arr) => {
     const desc = document.createElement('p')
     desc.innerText = ele.desc
 
-    const techstack = document.createElement('p') 
+    const techstack = document.createElement('b') 
        
     let bag = ''
     ele.techstack.forEach((e) => {
