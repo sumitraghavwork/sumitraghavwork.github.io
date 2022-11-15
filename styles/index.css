@@ -5,8 +5,7 @@ html {
 .heading {
   font-size: 35px;
   text-align: center;
-  /* width: 60vw; */
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .about_btn {
   /* width: 20vw; */
@@ -15,7 +14,6 @@ html {
   border-radius: 10px;
   padding: 10px 15px;
   background-color: #ccc;
-  /* border: 1px solid #bbb; */
 }
 .about_btn:hover {
   background-color: rgb(126, 126, 241);
@@ -25,14 +23,20 @@ html {
   width: 100vw;
   height: 60px;
   padding: 0% 10%;
-  background-color: rgb(126, 126, 241);
+  background-color: rgb(81, 81, 244);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0px;
   z-index: 1000;
+  opacity: 99%;
 }
+#navbar.scrolled {
+  background-color: rgb(115, 115, 249);
+}
+  
+
 #navbar > .logo {
   font-size: 30px;
   font-weight: bold;
@@ -131,19 +135,18 @@ html {
 }
 
 #aboutMe > .aboutMe-container {
-  /* padding: 5%; */
-  /* border: 1px solid salmon; */
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 2fr 3fr;
   gap: 20px;
   justify-content: space-around;
   align-items: flex-start;
-  /* background-color: antiquewhite; */
-  border-radius: 30px;
 }
-
+#aboutMe > .aboutMe-container > div > img {
+  width: 100%;
+  border-radius: 30px;
+  /* border: 1px solid #ccc; */
+}
 #aboutMe > .aboutMe-container > div > h3 {
   line-height: 30px;
 }
