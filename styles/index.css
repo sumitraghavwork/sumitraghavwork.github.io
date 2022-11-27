@@ -145,6 +145,7 @@ html {
 #aboutMe > .aboutMe-container > div > img {
   width: 100%;
   border-radius: 30px;
+  /* border-radius: 100%; */
   /* border: 1px solid #ccc; */
 }
 #aboutMe > .aboutMe-container > div > h3 {
