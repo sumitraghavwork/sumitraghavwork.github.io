@@ -169,7 +169,7 @@ let projects = [
     name: 'BookMyBus SpringBoot Application',
     desc:
       "An end-to-end bus reservation system. It handles user authentication, create bus, route, book reservations, provide feedback.",
-    live: 'http://busdb-env.eba-3j79v3zc.ap-south-1.elasticbeanstalk.com/swagger-ui/',
+    live: 'https://drive.google.com/file/d/1z8W2wPKOp8Avx32rJu1jWigyjyMxW-F5/view?usp=sharing',
     github: 'https://github.com/sumitraghavwork/habitual-flag-8718',
     techstack: ['SpringBoot', 'AWS', 'Hibernate'],
     group: 'true',
